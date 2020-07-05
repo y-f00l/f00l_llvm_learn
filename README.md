@@ -1,6 +1,8 @@
 # f00l_llvm_learn
 - 记录一下llvm优化学习的过程
 - 课程是cscd70
+<details>
+<summary>lec1</summary>
 ## lec1
 ### basic block
 - basic block的标志
@@ -37,9 +39,7 @@ Replace instruction with: tv = VALUES[valnum1].var OP VALUES[valnum2].var
 dst = tv;
 set_var2value (dst, v)
 ```
-
      - 例子
-     
 ```
 Assign: a->r1,b->r2,c->r3,d->r4
 a = b+c;  ADD t1 = r2,r3 CPY r1 = t1 
@@ -67,15 +67,16 @@ B6: t1 := j-1
     t6 := 4*j
     t7 := A[t6]     ;A[j+1]
     if t3<=t7 goto B8
-B7: t8 :=j-1 
-    t9 := 4*t8
-    temp := A[t9] ;temp:=A[j] 
-    t12 := 4*j
-    t13 := A[t12] ;A[j+1] 
-    A[t9]:= t13 ;A[j]:=A[j+1] 
-    A[t12]:=temp ;A[j+1]:=temp
+|B7: t8 :=j-1 
+|    t9 := 4*t8
+|    temp := A[t9] ;temp:=A[j] 
+|    t12 := 4*j
+|    t13 := A[t12] ;A[j+1] 
+|    A[t9]:= t13 ;A[j]:=A[j+1] 
+|    A[t12]:=temp ;A[j+1]:=temp
 B8: j := j+1 goto B4
 B5: i := i-1 goto B2
+out: 
 ```
 ```
 优化后
@@ -84,8 +85,8 @@ B2: if i<1 goto out
 B3: j := 1
 B4: if j>i goto B5
 B6: t1 := j-1
-B7: A[t2] := t7
-    A[t6] := t3
+|B7: A[t2] := t7
+|    A[t6] := t3
 B8: j := j+1
     goto B4
     t2 := 4*t1
@@ -96,5 +97,49 @@ B8: j := j+1
 B5: i := i-1 goto B2
 out:
 ```
-- loop optimization循环
-- loop optimizati
+    - 可以看到优化后，利用了之前汇编就计算出的临时变量值来使用，无需再次计算
+    - 优化的部分我用|标记出来了
+- loop optimization
+  - 尽量用加法替换乘法
+  - 对循环的下标，尽量用其他已经有的变量来代替，这样就无需再次计算
+```
+优化前
+B1: i := n-1
+B2: if i<1 goto out
+|B3: j := 1
+|B4: if j>i goto B5
+|B6: t1 := j-1
+|    t2 := 4*t1
+|    t3 := A[t2]     ;A[j]
+|    t6 := 4*j
+|    t7 := A[t6]     ;A[j+1]
+|    if t3<=t7 goto B8
+B7: A[t2] := t7
+    A[t6] := t3
+|B8: j := j+1
+|    goto B4
+B5: i := i-1 goto B2
+out:
+```
+```
+优化后
+B1: i := n-1
+B2: if i<1 goto out 
+|B3: t2 := 0
+|    t6 := 4
+|B4: t19 := 4*I
+|    if t6>t19 goto B5
+|B6: t3 := A[t2]
+|    t7 := A[t6] ;A[j+1] 
+|    if t3<=t7 goto B8
+B7: A[t2] := t7
+    A[t6] := t3
+|B8: t2 := t2+4
+|    t6 := t6+4
+|    goto B4 
+B5: i := i-1
+    goto B2 
+out:
+```
+  - 可以看到优化后，乘法由两次变成一次，然后用统一的变量来代替数组的index和循环的变量
+</details>
