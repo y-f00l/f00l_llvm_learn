@@ -193,4 +193,8 @@ endif(APPLE)
 - 这样就能源码外编译pass了
 - 最开始的时候我没加if(APPLE)那个，所以每次build都会出错
 
+- 还有一个是自行编译出来的pass用opt加载会出现Symbol Not Found
+- 这是因为我的电脑用的opt是自带的，版本比较低，从而导致符号和我自行编译的llvm不一样所导致的
+- 在环境变量里加一行包含llvm/bin路径的语句就可以了
+
 </details>
