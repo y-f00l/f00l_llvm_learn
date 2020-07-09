@@ -197,4 +197,37 @@ endif(APPLE)
 - 这是因为我的电脑用的opt是自带的，版本比较低，从而导致符号和我自行编译的llvm不一样所导致的
 - 在环境变量里加一行包含llvm/bin路径的语句就可以了
 
+## 在项目中include llvm的库
+- 在CMakeLists里这么写
+
+```
+
+cmake_minimum_required(VERSION 3.16)
+project(kaledoscope_front)
+
+set(CMAKE_CXX_STANDARD 14)
+set(LLVM_HOME ~/llvm/llvm-project/build)
+set(LLVM_DIR ${LLVM_HOME}/lib/cmake/llvm)
+find_package(LLVM REQUIRED CONFIG)
+add_definitions(${LLVM_DEFINITIONS})
+include_directories(${LLVM_INCLUDE_DIRS})
+link_directories(${LLVM_LIBRARY_DIRS})
+
+add_executable(kaledoscope_front main.cpp)
+
+llvm_map_components_to_libnames(llvm-config --cxxflags --ldflags --system-libs --libs core mcjit native)
+target_link_libraries(kaledoscope_front ${llvm_libs})
+link_directories(${LLVM_LIBRARY_DIRS})
+
+set_target_properties(kaledoscope_front PROPERTIES
+        COMPILE_FLAGS "-fno-rtti "
+        )
+if(APPLE)
+    set_target_properties(kaledoscope_front PROPERTIES
+            LINK_FLAGS "-undefined dynamic_lookup"
+            )
+endif(APPLE)
+
+```
+
 </details>
