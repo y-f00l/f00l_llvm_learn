@@ -144,3 +144,53 @@ out:
 ```
   - 可以看到优化后，乘法由两次变成一次，然后用统一的变量来代替数组的index和循环的变量
 </details>
+<details>
+<summary>LLVM的坑</summary>
+
+## 源码外编译llvm pass
+
+- 首先要新建一个<project>文件夹，然后在里面建一个写Pass的文件夹，<project>里的CMakeLists.txt要这么写
+  
+```c
+  
+cmake_minimum_required(VERSION 3.16) #说明cmake的最小版本
+project(assignment1)  #项目名称
+set(CMAKE_CXX_STANDARD 11) #设置c++版本
+set(LLVM_HOME ~/llvm/build) #设置llvm的位置
+set(LLVM_DIR ${LLVM_HOME}/lib/cmake/llvm) #设置cmake的位置
+find_package(LLVM REQUIRED CONFIG) #找到llvm-config
+add_definitions(${LLVM_DEFINITIONS}) 
+include_directories(${LLVM_INCLUDE_DIRS}) #将llvm的include文件夹包含进来
+link_directories(${LLVM_LIBRARY_DIRS}) #将llvm的library文件夹包含进来
+
+MESSAGE(${LLVM_LIBRARY_DIRS})
+MESSAGE(${LLVM_INCLUDE_DIRS})
+
+add_subdirectory(FunctionInfo) #将pass的文件夹加入
+
+```
+- 然后是pass文件夹里的
+
+```
+
+set(CMAKE_CXX_STANDARD 11)
+add_library(FunctionPass MODULE
+        FunctionInfo.cpp
+        )
+
+set_target_properties(FunctionPass PROPERTIES
+        COMPILE_FLAGS "-fno-rtti"
+        )
+
+if(APPLE)
+    set_target_properties(FunctionPass PROPERTIES
+            LINK_FLAGS "-undefined dynamic_lookup"
+            )
+endif(APPLE)
+
+```
+
+- 这样就能源码外编译pass了
+- 最开始的时候我没加if(APPLE)那个，所以每次build都会出错
+
+</details>
