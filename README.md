@@ -255,5 +255,12 @@ if(APPLE)
 endif(APPLE)
 
 ```
+```
+llvm命名规范
 
+类型命名 （包括 classes，structs，enums，typedef 等）应该是动词并且以大写字母开头（如 TextFileReader）。
+变量命名 应该是名词（代表状态）。命名应该是大写字母开头的驼峰大小写（如 Leader 或 Boats）。
+函数命名 应该是动词短语（代表动作）并且命令式的函数应该是祈使语气的。命名应该是小写字母开头的驼峰写法（如 openFile() 或 isFoo()）。
+枚举声明 如（emum { ... }）是类型，所以应该遵循类型的命名规则。枚举的常见用法是作为union的区分符或内部类的指示符。当一个枚举这样使用的时候应该增加一个 Kind 后缀（如 ValueKind）。
+```
 </details>
