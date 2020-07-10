@@ -1,0 +1,10 @@
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/CMakeFiles/omp_gen.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/CMakeFiles/intrinsics_gen.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/CMakeFiles/rebuild_cache.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/CMakeFiles/edit_cache.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/CMakeFiles/FunctionPass.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/CMakeFiles/rebuild_cache.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/CMakeFiles/edit_cache.dir
+/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/CMakeFiles/LocalOptPass.dir

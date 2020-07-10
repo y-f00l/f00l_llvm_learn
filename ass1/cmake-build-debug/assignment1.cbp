@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="assignment1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\llvm\;CMake Files\..\..\..\..\llvm\llvm-project\;CMake Files\..\..\..\..\llvm\llvm-project\build\;CMake Files\..\..\..\..\llvm\llvm-project\build\lib\;CMake Files\..\..\..\..\llvm\llvm-project\build\lib\cmake\;CMake Files\..\..\..\..\llvm\llvm-project\build\lib\cmake\llvm\;CMake Files\..\..\..\..\llvm\llvm-project\llvm\;CMake Files\..\..\..\..\llvm\llvm-project\llvm\cmake\;CMake Files\..\..\..\..\llvm\llvm-project\llvm\cmake\modules\;CMake Files\FunctionInfo\;CMake Files\LocalOpt\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp_gen">
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp_gen"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intrinsics_gen">
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 intrinsics_gen"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FunctionPass">
+				<Option output="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/libFunctionPass.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/g1ft/llvm/llvm-project/llvm/include"/>
+					<Add directory="/Users/g1ft/llvm/llvm-project/build/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 FunctionPass"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FunctionPass/fast">
+				<Option output="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/libFunctionPass.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/g1ft/llvm/llvm-project/llvm/include"/>
+					<Add directory="/Users/g1ft/llvm/llvm-project/build/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 FunctionPass/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/FunctionInfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LocalOptPass">
+				<Option output="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/libLocalOptPass.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/g1ft/llvm/llvm-project/llvm/include"/>
+					<Add directory="/Users/g1ft/llvm/llvm-project/build/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 LocalOptPass"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LocalOptPass/fast">
+				<Option output="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/libLocalOptPass.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/g1ft/llvm/llvm-project/llvm/include"/>
+					<Add directory="/Users/g1ft/llvm/llvm-project/build/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 LocalOptPass/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/g1ft/Desktop/homework/CMU_745/ass1/cmake-build-debug/LocalOpt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/FunctionInfo/FunctionInfo.cpp">
+			<Option target="FunctionPass"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/LocalOpt/LocalOpt.cpp">
+			<Option target="LocalOptPass"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/../../../../llvm/llvm-project/build/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\llvm\llvm-project\build\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/../../../../llvm/llvm-project/build/lib/cmake/llvm/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\llvm\llvm-project\build\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/../../../../llvm/llvm-project/build/lib/cmake/llvm/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\llvm\llvm-project\build\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/../../../../llvm/llvm-project/build/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\llvm\llvm-project\build\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/../../../../llvm/llvm-project/llvm/cmake/modules/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\llvm\llvm-project\llvm\cmake\modules\"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/FunctionInfo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\FunctionInfo\"/>
+		</Unit>
+		<Unit filename="/Users/g1ft/Desktop/homework/CMU_745/ass1/LocalOpt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\LocalOpt\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

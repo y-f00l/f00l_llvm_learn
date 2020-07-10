@@ -1,0 +1,3 @@
+/Users/g1ft/Desktop/homework/CSCD70/Assignment1-Introduction_to_LLVM/FunctionInfo/CMakeFiles/rebuild_cache.dir
+/Users/g1ft/Desktop/homework/CSCD70/Assignment1-Introduction_to_LLVM/FunctionInfo/CMakeFiles/edit_cache.dir
+/Users/g1ft/Desktop/homework/CSCD70/Assignment1-Introduction_to_LLVM/FunctionInfo/CMakeFiles/FunctionPass.dir
