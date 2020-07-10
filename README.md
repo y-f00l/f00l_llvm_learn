@@ -145,6 +145,30 @@ out:
   - 可以看到优化后，乘法由两次变成一次，然后用统一的变量来代替数组的index和循环的变量
 </details>
 <details>
+<summary>ass1</summary>
+  
+- 实验是通过llvm pass来遍历clang生成的代码，然后对其进行一些操作
+- 介绍一下pass的概念
+  - pass可以通俗的理解成对代码进行遍历，然后可以在遍历的过程可以对程序进行修改
+  - llvm把程序分解成Module，Module分解成Function和Global variable，
+  - Function分解成Basic Block,Basic Block分解成Instruction
+  - llvm针对这些分解出来的都有pass，这些pass都是class，并且提供了对程序进行改动的成员函数
+  - 继承后就可以编写自己的pass了
+## function info
+- 这一个实验主要是打印出函数的信息
+  - 函数名称
+  - 直接调用该函数的次数
+  - 函数的参数个数
+  - 函数的Basic Block的个数
+  - 函数的指令数
+## local optimization
+- 这个利用llvm的pass进行local optimization
+- 分为三个方面
+  - algebraic identifies, eg: x + 0 -> x
+  - constant fold  eg: 3 + 6 -> 9
+  - strengthen reduction  eg: x * 2 -> x << 1
+</details>
+<details>
 <summary>LLVM的坑</summary>
 
 ## 源码外编译llvm pass
