@@ -167,6 +167,8 @@ out:
   - algebraic identifies, eg: x + 0 -> x
   - constant fold  eg: 3 + 6 -> 9
   - strengthen reduction  eg: x * 2 -> x << 1
+- 这些都是需要对instructions进行pass，然后找到符合条件的指令进行优化。
+- 利用llvm那些pass的成员函数就可以完成这个工作
 </details>
 <details>
 <summary>LLVM的坑</summary>
